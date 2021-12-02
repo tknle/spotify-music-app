@@ -1,9 +1,11 @@
-
+##Streaming Music Web App
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.  
 Project's website: [Spotify-Music-Demo](https://vibrant-sammet-a9d3de.netlify.app)  
 
 **Describes:** A free streaming web app using Spotify API with authentication, search, and favourite list feature. The Angular web app is built with 2 components: a web API to host the server, which is on MongoDB and a front site built using TypeScript and Angular. 
-_Technologies:_ JWT (Route Guards / Http Interceptors), Express.js, Passport.js
+_Technologies:_ JWT (Route Guards / Http Interceptors), Express.js, Passport.js  
+
+
 ###Screenshots
 **Login Page**  
 ![login](https://user-images.githubusercontent.com/65566882/144499763-3a7d4bc2-cea0-4eec-bee2-f73bea602611.png)  
