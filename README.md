@@ -1,4 +1,4 @@
-##Streaming Music Web App
+## Streaming Music Web App  
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.  
 Project's website: [Spotify-Music-Demo](https://vibrant-sammet-a9d3de.netlify.app)  
 
@@ -6,7 +6,7 @@ Project's website: [Spotify-Music-Demo](https://vibrant-sammet-a9d3de.netlify.ap
 _Technologies:_ JWT (Route Guards / Http Interceptors), Express.js, Passport.js  
 
 
-###Screenshots
+### Screenshots
 **Login Page**  
 ![login](https://user-images.githubusercontent.com/65566882/144499763-3a7d4bc2-cea0-4eec-bee2-f73bea602611.png)  
 You can either register or use:  
