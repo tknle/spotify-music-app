@@ -1,7 +1,6 @@
 # Web422A4
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.  
-Demo: https://vibrant-sammet-a9d3de.netlify.app  
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.
 
 ## Development server
 

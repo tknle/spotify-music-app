@@ -1,7 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Subscription } from 'rxjs';
-
-// Services
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { MusicDataService } from '../music-data.service';
 
 @Component({
@@ -15,21 +13,23 @@ export class FavouritesComponent implements OnInit, OnDestroy {
   private retrieveFavorites: any;
   private removeFromFavorites: any;
 
-  constructor(private service: MusicDataService) {}
+  constructor(private service: MusicDataService, private snackBar: MatSnackBar,) {}
 
   ngOnInit(): void {
-    this.retrieveFavorites = this.service
-      .getFavourites()
+    this.retrieveFavorites = this.service.getFavourites().subscribe(res => {
+      this.favourites = res.tracks;
+      
+    });
+  }
+
+  removeFavourite(id: string) :void {
+    this.removeFromFavorites = this.service
+      .removeFavourite(id)
       .subscribe((response) => {
         this.favourites = response.tracks;
       });
-  }
-
-  removeFromFavourites(id: string) {
-    this.removeFromFavorites = this.service
-      .removeFromFavourites(id)
-      .subscribe((response) => {
-        this.favourites = response.tracks;
+      this.snackBar.open('Removing from Favourites...', 'Done', {
+        duration: 1000,
       });
   }
 
