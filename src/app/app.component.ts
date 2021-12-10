@@ -1,13 +1,4 @@
-/*********************************************************************************
-* WEB422 – Assignment 06
-* I declare that this assignment is my own work in accordance with Seneca Academic Policy. No part of this
-* assignment has been copied manually or electronically from any other source (including web sites) or
-* distributed to other students.
-*
-* Name: Mia Le Student ID: 131101198 Date: December 2, 2021
-* User-api | server site: https://hidden-ocean-12155.herokuapp.com/
-* 
-********************************************************************************/
+
 
 import { Component, OnInit } from '@angular/core';
 import { NavigationStart, Event, Router } from '@angular/router';
@@ -23,7 +14,7 @@ export class AppComponent implements OnInit {
   constructor(private router: Router, private auth: AuthService) {}
 
   searchString: string = '';
-  title = 'web422-a6';
+  title = 'spotify-api';
   public token: any;
   
   handleSearch() {
